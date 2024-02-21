@@ -1,1 +1,24 @@
+import java.util.Scanner;
 
+public class Main {
+    public static void main(String[] args) {
+        int firstNumber = 10;
+        int secondNumber = 5;
+        Scanner myObj = new Scanner(System.in);
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Enter the operator: ");
+            char operator = myObj.next().charAt(0);
+            if (operator == '+') {
+                System.out.println("Addition: " + (firstNumber + secondNumber));
+            } else if (operator == '-') {
+                System.out.println("Subtraction: " + (firstNumber - secondNumber));
+            } else if (operator == '*') {
+                System.out.println("Multiplication: " + (firstNumber * secondNumber));
+            } else if (operator == '/') {
+                System.out.println("Division: " + (firstNumber / secondNumber));
+            } else {
+                System.out.println("This operator is not applicable");
+            }
+        }
+    }
+}
