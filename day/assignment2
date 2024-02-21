@@ -1,0 +1,14 @@
+public class Main{
+    public static void main(String[] args){
+        int integer = 42;
+        System.out.println("Integer Variable: "+integer);
+        double doubleVariable = 3.14159;
+        System.out.println("Double Variable: "+doubleVariable);
+        char characterVariable = 'A';
+        System.out.println("Character: "+characterVariable);
+        boolean booleanVariable = true;
+        System.out.println("Boolean Variable: "+booleanVariable);
+        String stringVariable = "Hello, SkillCaptain!";
+        System.out.println("String Variable: "+stringVariable);
+    }
+}
