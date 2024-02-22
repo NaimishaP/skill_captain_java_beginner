@@ -1,0 +1,48 @@
+import java.util.HashSet;
+import java.util.Set;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a Set to store numbers
+        Set<Integer> numbers = new HashSet<>();
+
+        // Add elements to the set
+        numbers.add(5);
+        numbers.add(10);
+        numbers.add(15);
+        numbers.add(20);
+
+
+        // Iterating over the set
+        System.out.println("Numbers in the set: ");
+        for (Integer setNumbers : numbers) {
+            System.out.println(setNumbers);
+        }
+        // Remove an element 5 from the set
+        boolean removeFive = numbers.remove(5);
+        System.out.println("removed 5 from the set: " + removeFive);
+        System.out.println("Set after removal:");
+        for (Integer value : numbers) {
+            System.out.println(value);
+        }
+        //remove an element 25 which is not in the set
+        boolean removeTwentyFive = numbers.remove(25);
+        System.out.println("removed 25 from the set: " + removeTwentyFive);
+
+        // Checking if an element 10 exists in the set
+        boolean containsNumberTen = numbers.contains(10);
+        System.out.println("Contains 10: " + containsNumberTen);
+
+        // Checking if an element 25 exists in the set
+        boolean containsNumberTwentyFive = numbers.contains(25);
+        System.out.println("Contains 25: " + containsNumberTwentyFive);
+
+        // Size of the set
+        int size = numbers.size();
+        System.out.println("Size of the set: " + size);
+
+        // checking the set is empty or not
+        boolean isEmpty = numbers.isEmpty();
+        System.out.println("Set is empty: " + isEmpty);
+    }
+}
