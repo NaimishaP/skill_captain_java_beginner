@@ -1,0 +1,31 @@
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        //create the hashmap with wordFrequency
+        HashMap<String, Integer> wordFrequency = new HashMap<>();
+        //prompt the user to enter the paragraph
+        Scanner myObj = new Scanner(System.in);
+        System.out.println("Enter the paragraph");
+        String word = myObj.nextLine();
+        //Split the paragraph in to individual words
+        String[] individualWords = word.split("\\s");
+        for(String w:individualWords) {
+            int frequency = 1;
+            //when we encounter a word from paragraph first time then the frequency
+            // should be 1
+            if (!(wordFrequency.containsKey(w))) {
+                wordFrequency.put(w, frequency);
+            }
+            //when we encounter a word from paragraph many times then the frequency should be increment
+            else {
+                frequency = wordFrequency.get(w);
+                frequency++;
+                wordFrequency.put(w, frequency);
+            }
+        }
+        System.out.println(wordFrequency);
+    }
+}
