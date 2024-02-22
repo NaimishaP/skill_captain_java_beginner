@@ -19,7 +19,6 @@ public class Main {
         do{
             if (userNumber<10 && userNumber>0) {
                 System.out.println("Valid range");
-                k++;
                 break;
             }
             else if(userNumber<0 || userNumber>10) {
