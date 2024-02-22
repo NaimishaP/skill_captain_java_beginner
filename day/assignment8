@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+import java.util.List;
+public class Main {
+    public static void main(String[] args) {
+        //create a list
+        List<String> GroceryList = new ArrayList<>();
+        System.out.println("Initial Grocery List: "+GroceryList);
+        // Add elements
+        GroceryList.add("Apples(Quantity:5)");
+        System.out.println("Adding in the list "+GroceryList);
+        GroceryList.add("Bananas(Quantity:2)");
+        System.out.println("one more item adding in the list "+GroceryList);
+        //Remove items from the list
+        GroceryList.remove("Apples(Quantity:5)");
+        System.out.println("Removing Apples in the list\n"+"Current Grocery List: "+ GroceryList);
+        //Check the element exists in grocery list
+        boolean containsBanana = GroceryList.contains("Bananas(Quantity:2)");
+        System.out.println("Contains Banana: "+containsBanana);
+        //clear the list
+        GroceryList.clear();
+        System.out.println("Grocery List:"+GroceryList);
+    }
+}
